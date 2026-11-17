@@ -1,0 +1,6 @@
+{
+  "name": "Agrovendedor | Turma 34 Presencial · Faculdade IBG",
+  "description": "Página oficial da Turma 34 presencial do Agrovendedor em parceria com a Faculdade IBG, nos dias 04 e 05 de Dezembro em Rondonópolis - MT.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
