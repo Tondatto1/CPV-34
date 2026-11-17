@@ -7,7 +7,6 @@ import {
   ShieldCheck,
   AlertCircle,
   FileText,
-  GraduationCap,
   Check,
 } from 'lucide-react';
 import { IbgRegistrationData } from '../types';
@@ -353,19 +352,9 @@ export const CheckoutSection: React.FC = () => {
       <div className="max-w-2xl lg:max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-7 sm:mb-10 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100/90 border border-emerald-300 text-emerald-900 text-xs font-extrabold uppercase tracking-widest">
-            <GraduationCap className="w-4 h-4 text-emerald-700" />
-            <span>Agrovendedor × Faculdade IBG · Turma 34</span>
-          </div>
-
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight uppercase">
             GARANTA SUA VAGA
           </h2>
-          <p className="text-sm sm:text-base text-slate-600 font-medium">
-            Preencha sua ficha em 4 etapas rápidas para os dias{' '}
-            <strong className="text-slate-900">04 e 05 de Dezembro</strong> em{' '}
-            <strong className="text-slate-900">Rondonópolis - MT</strong>.
-          </p>
         </div>
 
         {/* Official IBG Multi-Step Registration Form Card */}
@@ -378,7 +367,7 @@ export const CheckoutSection: React.FC = () => {
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div>
                 <h3 className="text-lg sm:text-2xl font-black tracking-tight uppercase">
-                  INSCRIÇÃO TREINAMENTOS IBG
+                  INSCRIÇÃO - CAMPEÃO EM VENDAS
                 </h3>
                 {!submittedRecord && (
                   <p className="text-xs text-slate-300 font-semibold mt-1">

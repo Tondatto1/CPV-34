@@ -242,41 +242,122 @@ export const SCHEDULE_DAYS: ScheduleDay[] = [
     dayNumber: '1º ENCONTRO',
     dateLabel: '04 de Dezembro',
     weekday: 'Sexta-feira',
-    theme: 'Fundamentos do Agrovendedor, Prospecção & Defesa de Valor no Campo',
-    summary: 'Abertura presencial na Faculdade IBG com entrega do kit oficial e imersão prática no Método 21 em 7.',
+    theme: 'Preparação, Abordagem, Perfil e Necessidade do Cliente',
+    summary: 'Programação presencial das 13:00 às 22:30 com recepção, Módulos 1, 2 e 3, atividades práticas e balanço final.',
     activities: [
       {
-        time: '08:00',
-        period: 'Manhã',
-        title: 'Credenciamento, Recepção & Entrega da Camiseta Oficial',
-        description: 'Recepção dos participantes no campus da Faculdade IBG em Rondonópolis - MT, validação acadêmica e retirada do kit presencial.',
-        highlight: 'Kit Presencial'
-      },
-      {
-        time: '08:30',
-        period: 'Manhã',
-        title: 'Abertura Institucional: Agrovendedor + Faculdade IBG',
-        description: 'Boas-vindas oficiais da parceria educacional, alinhamento de metas da Turma 34 e diagnóstico comercial da sua operação.',
-        highlight: 'Turma 34'
-      },
-      {
-        time: '09:30',
-        period: 'Manhã',
-        title: 'Prospecção Estratégica & Inteligência de Território Rural',
-        description: 'Como mapear produtores de alto potencial por cultura, hectare e janela de compra da safra para abordar no timing exato.',
-      },
-      {
-        time: '13:30',
+        time: '13:00 às 13:30',
         period: 'Tarde',
-        title: 'Conexão Técnica & Demonstração de ROI por Hectare',
-        description: 'Transforme recomendação agronômica em retorno financeiro claro por saca e por hectare, saindo da guerra de preços.',
-        highlight: 'Prática de Campo'
+        title: 'RECEPÇÃO',
+        description: 'Confirmação da inscrição e entrega de material.',
+        highlight: 'Credenciamento'
       },
       {
-        time: '16:00',
+        time: '13:30 às 14:00',
         period: 'Tarde',
-        title: 'Dinâmicas Presenciais & Estudo de Casos do Agro Mato-grossense',
-        description: 'Aplicação guiada em grupos com situações reais de revendas, cooperativas, insumos, máquinas e pecuária.',
+        title: 'INTRODUÇÃO',
+        description: '"Desafios das Vendas no Agronegócio: o que o profissional do agro precisa saber e fazer para vender mais e melhor?"'
+      },
+      {
+        time: '14:00 às 15:00',
+        period: 'Tarde',
+        title: 'MÓDULO 1: Preparação, Planejamento e Estratégia em Vendas',
+        description: 'Fundamentos de preparação comercial e gestão estratégica para vendas no agronegócio.',
+        bullets: [
+          'Uso da Agenda;',
+          'Importância da Carteira de clientes;',
+          'Estudando melhor aquilo que você vende.'
+        ],
+        highlight: 'Módulo 1'
+      },
+      {
+        time: '15:00 às 16:00',
+        period: 'Tarde',
+        title: 'EXERCÍCIO E PRÁTICA: Módulo 1',
+        description: 'Aplicação prática dos conceitos do Módulo 1.',
+        bullets: [
+          'Fazendo na prática: construindo agenda de alta performance e estratégias de segmentação de cliente;',
+          'Caderno de Atividades.'
+        ],
+        highlight: 'Prática'
+      },
+      {
+        time: '16:00 às 16:30',
+        period: 'Tarde',
+        title: 'INTERVALO',
+        description: 'Pausa programada entre os blocos da tarde.'
+      },
+      {
+        time: '16:30 às 17:30',
+        period: 'Tarde',
+        title: 'MÓDULO 2: Abordagem e Perfil de Clientes',
+        description: 'Leitura comportamental e técnicas de conexão inicial com o cliente do agro.',
+        bullets: [
+          'Estudo detalhado do Perfil de Clientes;',
+          'O que é Rapport?',
+          'Como gerar sinergia para ganhar a confiança do cliente Agro.'
+        ],
+        highlight: 'Módulo 2'
+      },
+      {
+        time: '17:30 às 18:00',
+        period: 'Tarde',
+        title: 'PRÁTICA: Módulo 2',
+        description: 'Aplicação prática de abordagem.',
+        bullets: [
+          'Atividade prática de abordagem.'
+        ],
+        highlight: 'Prática'
+      },
+      {
+        time: '18:00 às 19:30',
+        period: 'Noite',
+        title: 'MÓDULO 3: Necessidade do Cliente',
+        description: 'Técnicas de investigação consultiva para identificar necessidades reais de compra.',
+        bullets: [
+          'Perguntas de investigação;',
+          'Perguntas de Necessidade;',
+          'Motivadores de compra.'
+        ],
+        highlight: 'Módulo 3'
+      },
+      {
+        time: '19:30 às 20:30',
+        period: 'Noite',
+        title: 'PRÁTICA: Módulo 3',
+        description: 'Exercícios aplicados de investigação e geração de necessidade.',
+        bullets: [
+          'Construindo na prática perguntas de Investigação e a necessidade do cliente;',
+          'Gerando necessidade no cliente;',
+          'Caderno de Atividades.'
+        ],
+        highlight: 'Prática'
+      },
+      {
+        time: '20:30 às 21:00',
+        period: 'Noite',
+        title: 'INTERVALO',
+        description: 'Pausa programada antes da dinâmica final em grande grupo.'
+      },
+      {
+        time: '21:00 às 22:00',
+        period: 'Noite',
+        title: 'PRÁTICA: unindo os módulos 02 e 03',
+        description: 'Integração prática de abordagem, perfil e levantamento de necessidades.',
+        bullets: [
+          'Apresentação para grande grupo sobre a dinâmica de vendas.'
+        ],
+        highlight: 'Módulos 02 e 03'
+      },
+      {
+        time: '22:00 às 22:30',
+        period: 'Encerramento',
+        title: 'BALANÇO FINAL E ENCERRAMENTO',
+        description: 'Consolidação dos aprendizados do primeiro encontro.',
+        bullets: [
+          'Quais os ganhos e conquistas com o conhecimento adquirido no dia?'
+        ],
+        highlight: 'Encerramento'
       }
     ]
   },
@@ -285,35 +366,63 @@ export const SCHEDULE_DAYS: ScheduleDay[] = [
     dayNumber: '2º ENCONTRO',
     dateLabel: '05 de Dezembro',
     weekday: 'Sábado',
-    theme: 'Contorno de Objeções, Negociação de Alta Margem & Certificação',
-    summary: 'Consolidação prática em negociação consultiva, simulações ao vivo e cerimônia oficial de entrega de troféus e certificados.',
+    theme: 'Negociação, Fechamento, Pós-venda, Recompra & Certificação',
+    summary: 'Programação presencial das 07:00 às 12:30 com tema livre, Módulos 5, 6 e 7, apresentação prática dos 7 módulos e entrega de certificados e prêmios.',
     activities: [
       {
-        time: '08:30',
+        time: '07:00 às 07:30',
         period: 'Manhã',
-        title: 'Blindagem de Margem & Contorno de Objeções no Balcão e na Fazenda',
-        description: 'Roteiros práticos para responder ao "tá caro" e defender especialidades e pacotes tecnológicos sem queimar margem.',
-        highlight: 'Método 21 em 7'
+        title: 'TEMA LIVRE: "Precisa-se de Técnicos que saibam vender"',
+        description: 'Abertura do segundo dia sobre o posicionamento comercial e a postura consultiva do profissional técnico no agronegócio.',
+        highlight: 'Abertura'
       },
       {
-        time: '10:30',
+        time: '07:30 às 08:30',
         period: 'Manhã',
-        title: 'Negociação Avançada, Fechamento & Pós-Venda de Recompras',
-        description: 'Condução de propostas com prazos, barter, cross-selling e construção de relacionamento de longo prazo com o produtor.',
+        title: 'MÓDULO 5: Negociação e Fechamento',
+        description: 'Estratégias práticas para conduzir negociações de alta margem e concretizar o fechamento com segurança.',
+        highlight: 'Módulo 5'
       },
       {
-        time: '13:30',
-        period: 'Tarde',
-        title: 'Simulações Reais (Roleplay) & Plano de Ação Imediato',
-        description: 'Treinamento prático entre participantes com feedback direto dos treinadores para aplicar na segunda-feira seguinte.',
-        highlight: 'Aplicação Imediata'
+        time: '08:30 às 09:30',
+        period: 'Manhã',
+        title: 'EXERCÍCIO E PRÁTICA: Módulo 5',
+        description: 'Aplicação prática em sala das técnicas de negociação e fechamento do Módulo 5.',
+        highlight: 'Prática'
       },
       {
-        time: '16:30',
+        time: '09:30 às 10:00',
+        period: 'Manhã',
+        title: 'MÓDULO 6: Pós venda',
+        description: 'Acompanhamento estruturado após o fechamento para consolidar resultados e confiança com o produtor.',
+        highlight: 'Módulo 6'
+      },
+      {
+        time: '10:00 às 10:30',
+        period: 'Manhã',
+        title: 'INTERVALO',
+        description: 'Pausa programada entre os blocos da manhã.'
+      },
+      {
+        time: '10:30 às 11:00',
+        period: 'Manhã',
+        title: 'MÓDULO 7: Recompra ou Cliente Ativo',
+        description: 'Estratégias para manter o cliente ativo na carteira e gerar recompras contínuas safra após safra.',
+        highlight: 'Módulo 7'
+      },
+      {
+        time: '11:00 às 12:00',
+        period: 'Manhã',
+        title: 'EXERCÍCIOS E PRÁTICA COM A APRESENTAÇÃO DOS 7 Módulos',
+        description: 'Consolidação e apresentação prática integrando os 7 módulos trabalhados ao longo da imersão.',
+        highlight: '7 Módulos'
+      },
+      {
+        time: '12:00 às 12:30',
         period: 'Encerramento',
-        title: 'Cerimônia de Encerramento: Entrega de Troféus e Certificados',
-        description: 'Formatura presencial da Turma 34 com entrega do Troféu Exclusivo e do Certificado Conjunto Agrovendedor + Faculdade IBG.',
-        highlight: 'Troféu + Certificado'
+        title: 'ENCERRAMENTO E ENTREGA DE CERTIFICADO E PRÊMIOS',
+        description: 'Encerramento oficial da Turma 34 com entrega de certificados e prêmios aos participantes.',
+        highlight: 'Certificado + Prêmios'
       }
     ]
   }

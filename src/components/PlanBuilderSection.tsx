@@ -5,13 +5,12 @@ import {
   GraduationCap,
   CalendarCheck,
   Target,
-  Users,
-  MessageSquare,
-  BookOpenCheck,
+  Bot,
+  PlayCircle,
   ChevronLeft,
   ChevronRight,
   MapPin,
-  ArrowRight
+  ArrowRight,
 } from 'lucide-react';
 
 interface PlanBuilderSectionProps {
@@ -24,63 +23,62 @@ export const PlanBuilderSection: React.FC<PlanBuilderSectionProps> = ({ onOpenCt
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  // Entregáveis refinados para a Turma 34 100% Presencial (04 e 05/12 · Faculdade IBG)
   const deliverables = [
     {
       id: 'camiseta',
       icon: Shirt,
       title: 'Camiseta Oficial do Agrovendedor',
-      description: 'Entregue presencialmente no credenciamento do 1º encontro na Faculdade IBG para você vestir a identidade da Turma 34.',
+      description:
+        'Entregue presencialmente no credenciamento do 1º encontro na Faculdade IBG para você vestir a identidade da Turma 34.',
       highlight: 'Kit Presencial',
     },
     {
       id: 'trofeu',
       icon: Trophy,
       title: 'Troféu Exclusivo de Conclusão',
-      description: 'Reconhecimento físico entregue na cerimônia de encerramento do dia 05/12 para celebrar sua formação comercial no agro.',
+      description:
+        'Reconhecimento físico entregue na cerimônia de encerramento do dia 05/12 para celebrar sua formação comercial no agro.',
       highlight: 'Reconhecimento',
     },
     {
       id: 'certificado',
       icon: GraduationCap,
-      title: 'Certificado Conjunto Agrovendedor + Faculdade IBG',
-      description: 'Certificação oficial chancelada pela maior escola comercial do agro e pela Faculdade IBG, com registro acadêmico.',
+      title: 'Certificado de Conclusão (Agrovendedor + Faculdade IBG)',
+      description:
+        'Certificação oficial chancelada pela maior escola comercial do agro e pela Faculdade IBG, atestando sua formação na Turma 34.',
       highlight: 'Certificação IBG',
+    },
+    {
+      id: 'agente-ceruti',
+      icon: Bot,
+      title: 'Acesso por 60 dias ao Agente Ceruti da Agrovendedor',
+      description:
+        'Agente conectado diretamente ao seu WhatsApp por 60 dias para realizar treinamentos práticos de quebra de objeções, simular negociações reais e afiar seus argumentos de venda no dia a dia.',
+      highlight: '60 Dias · WhatsApp',
+    },
+    {
+      id: 'plataforma-ead',
+      icon: PlayCircle,
+      title: 'Acesso à Plataforma EAD da Agrovendedor',
+      description:
+        'Plataforma de ensino com dezenas de treinamentos completos sobre vendas no agro, negociação estratégica, quebra de objeções, gestão de carteira de clientes e muito mais.',
+      highlight: 'Acervo EAD Completo',
     },
     {
       id: 'imersao',
       icon: CalendarCheck,
-      title: '2 Dias de Imersão 100% Presencial (04 e 05/12)',
-      description: 'Dois encontros completos em Rondonópolis - MT com acompanhamento direto dos treinadores em sala e dinâmicas em grupo.',
+      title: '2 Dias de Imersão Presenciais (04 e 05/12)',
+      description:
+        'Dois encontros completos em Rondonópolis - MT na Faculdade IBG com prática intensiva, dinâmicas em sala e acompanhamento direto dos treinadores.',
       highlight: 'Turma 34 Presencial',
     },
     {
       id: 'metodo',
       icon: Target,
-      title: 'Método 21 em 7 Aplicado à Realidade do Campo',
-      description: 'Domine prospecção estratégica, demonstração de ROI por saca/hectare e defesa de margem para vender até 5x mais.',
-      highlight: 'Método Prático',
-    },
-    {
-      id: 'objecoes',
-      icon: MessageSquare,
-      title: 'Simulações Reais & Contorno de Objeções',
-      description: 'Roleplays presenciais de negociação, barter, prazo e resposta imediata contra leilão de preços no balcão e na fazenda.',
-      highlight: 'Treino Ao Vivo',
-    },
-    {
-      id: 'networking',
-      icon: Users,
-      title: 'Networking Estratégico do Agronegócio de MT',
-      description: 'Conexão presencial com RTVs, agrônomos, consultores, gerentes e líderes de revendas e cooperativas da região.',
-      highlight: 'Conexões Reais',
-    },
-    {
-      id: 'material',
-      icon: BookOpenCheck,
-      title: 'Material Didático & Plano de Ação Imediato',
-      description: 'Ferramentas práticas, matriz de objeções e roteiros de visita prontos para aplicar na segunda-feira pós-imersão.',
-      highlight: 'Ferramentas',
+      title: 'Treinamento sobre o Método (21 em 7) Oficial da Agrovendedor',
+      description:
+        'Domine o método oficial 21 em 7 da Agrovendedor aplicado à realidade do campo para prospectar melhor, defender margem e vender até 5x mais.',
+      highlight: 'Método Oficial',
     },
   ];
 
@@ -88,19 +86,16 @@ export const PlanBuilderSection: React.FC<PlanBuilderSectionProps> = ({ onOpenCt
     {
       icon: Shirt,
       label: 'Camiseta Oficial',
-      sub: 'Kit de boas-vindas Turma 34',
       accent: 'bg-emerald-100 text-emerald-800 border-emerald-300',
     },
     {
       icon: Trophy,
       label: 'Troféu Exclusivo',
-      sub: 'Entrega na cerimônia dia 05/12',
       accent: 'bg-amber-100 text-amber-800 border-amber-300',
     },
     {
       icon: GraduationCap,
       label: 'Certificado IBG + Agro',
-      sub: 'Validação acadêmica conjunta',
       accent: 'bg-blue-100 text-blue-800 border-blue-300',
     },
   ];
@@ -227,9 +222,6 @@ export const PlanBuilderSection: React.FC<PlanBuilderSectionProps> = ({ onOpenCt
                 <div>
                   <span className="block font-black text-sm sm:text-base text-slate-900 leading-tight">
                     {kit.label}
-                  </span>
-                  <span className="block text-xs font-medium text-slate-600 mt-0.5">
-                    {kit.sub}
                   </span>
                 </div>
               </button>

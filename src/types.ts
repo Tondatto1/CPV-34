@@ -64,9 +64,10 @@ export interface LeadFormData {
 
 export interface ScheduleActivity {
   time: string;
-  period: 'Manhã' | 'Tarde' | 'Encerramento';
+  period: 'Manhã' | 'Tarde' | 'Noite' | 'Encerramento';
   title: string;
   description: string;
+  bullets?: string[];
   highlight?: string;
 }
 
